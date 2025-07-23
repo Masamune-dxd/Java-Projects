@@ -1,4 +1,4 @@
-package GcashApp;
+package $JavaFiles;
 
 // import java.util.ArrayList;
 // import java.util.List;

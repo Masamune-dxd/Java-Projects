@@ -1,4 +1,4 @@
-package TestGcashApp;
+package $JavaFiles;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
