@@ -37,16 +37,32 @@ public class StudentApp {
             }
 
             switch (choice) {
-                case 1 -> addStudent();
-                case 2 -> manager.viewAllStudents();
-                case 3 -> searchStudent();
-                case 4 -> updateStudent();
-                case 5 -> deleteStudent();
-                case 6 -> System.out.println("Total students registered: " + manager.getNumberOfStudents());
-                case 0 -> System.out.println("Exiting application. Goodbye!");
-                default -> {
-                    if (choice != 0) System.out.println("Invalid choice. Please try again.");
-                }
+                case 1:
+                    addStudent();
+                    break;
+                case 2:
+                    manager.viewAllStudents();
+                    break;
+                case 3:
+                    searchStudent();
+                    break;
+                case 4:
+                    updateStudent();
+                    break;
+                case 5:
+                    deleteStudent();
+                    break;
+                case 6:
+                    System.out.println("Total students registered: " + manager.getNumberOfStudents());
+                    break;
+                case 0:
+                    System.out.println("Exiting application. Goodbye!");
+                    break;
+                default:
+                    if (choice != 0) { // The default block doesn't explicitly 'break' but control flow falls through
+                        System.out.println("Invalid choice. Please try again.");
+                    }
+                    break; // It's good practice to have a break here too, though often implied for default
             }
         } while (choice != 0);
 
