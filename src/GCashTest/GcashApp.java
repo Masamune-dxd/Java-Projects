@@ -66,7 +66,7 @@ class GCashApp {
         }
 
         String wantsAnotherTransaction = "yes";
-        while (wantsAnotherTransaction.equalsIgnoreCase("yes")) {
+        while (wantsAnotherTransaction.equalsIgnoreCase("yes") || wantsAnotherTransaction.equalsIgnoreCase("y")) {
             System.out.println("\n--- Available Transactions ---");
             System.out.println("1. Check Balance");
             System.out.println("2. Cash-in");
