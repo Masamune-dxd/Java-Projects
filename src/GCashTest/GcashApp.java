@@ -45,10 +45,10 @@ class GCashApp {
             allBalances.add(new Balance(currentNextBalanceId++, 500.00, user2Id));
         }
         if (allUsers.size() > 2 && allUsers.get(2).getId() != -1) {
-             allBalances.add(new Balance(currentNextBalanceId++, 100.00, allUsers.get(2).getId())); // Pedro Gomez
+             allBalances.add(new Balance(currentNextBalanceId++, 100.00, allUsers.get(2).getId())); 
         }
         if (allUsers.size() > 3 && allUsers.get(3).getId() != -1) {
-             allBalances.add(new Balance(currentNextBalanceId++, 2000.00, allUsers.get(3).getId())); // Anna Lopez
+             allBalances.add(new Balance(currentNextBalanceId++, 2000.00, allUsers.get(3).getId())); 
         }
         checkBalance.displayBalances();
 
