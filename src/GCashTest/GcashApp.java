@@ -20,14 +20,20 @@ class GCashApp {
         CashTransfer cashTransfer = new CashTransfer(allBalances, allTransactions, allUsers, currentNextTransactionId);
         ViewTransaction viewTransaction = new ViewTransaction(allTransactions);
 
-        System.out.println("Welcome to GCashApp!");
-
+        System.out.println();
+        System.out.println("=========================================");
+        System.out.println("          Welcome to GCashApp           ");
+        System.out.println("=========================================");
+        System.out.println();
+        
         System.out.println("\n--- Initial Setup: Registering Users ---");
-        int user1Id = auth.registration("Juan Dela Cruz", "juan.delacruz@example.com", "09171234567", "1234");
-        int user2Id = auth.registration("Maria Santos", "maria.santos@example.com", "09987654321", "5678");
-        auth.registration("Pedro Gomez", "pedro.gomez@example.com", "09171234567", "9876");
-        auth.registration("Anna Lopez", "anna.lopez@example.com", "09151234567", "4321");
+        int user1Id = auth.registration("Eula Lawrence", "eulasthiccsavings@gmail.com", "09171234567", "1234");
+        int user2Id = auth.registration("Diesel", "dieselscandyl@gmail.com", "09987654321", "5678");
+        auth.registration("Tsukishiro Yanagi", "secretaryyanagi@gmail.com", "09171234567", "9876");
+        auth.registration("Topaz", "iamtopaz69@gmail.com", "09151234567", "4321");
         currentNextUserId = auth.getNextUserId();
+        System.out.println();
+        
 
         auth.displayUsers();
 
