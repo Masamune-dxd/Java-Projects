@@ -1,4 +1,4 @@
-package GCashTest;
+package GCashApp;
 
 class Balance {
     int id;

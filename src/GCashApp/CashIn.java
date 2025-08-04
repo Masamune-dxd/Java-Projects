@@ -1,4 +1,4 @@
-package GCashTest;
+package GCashApp;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

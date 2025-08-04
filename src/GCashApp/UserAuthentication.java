@@ -1,4 +1,4 @@
-package GCashTest;
+package GCashApp;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
